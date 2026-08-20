@@ -1,118 +1,192 @@
+\# Customer Churn Prediction - End-to-End ML Project
+
+
+
+\## Project Overview
+
+
+
+This project is an end-to-end Machine Learning application that predicts whether a customer is likely to churn.
+
+
+
+The project covers:
+
+
+
+\- Data ingestion
+
+\- Data preprocessing and transformation
+
+\- Model training
+
+\- Model evaluation
+
+\- MLflow experiment tracking
+
+\- Prediction pipeline
+
+\- FastAPI model serving
+
+\- Docker containerization
+
+\- Git and GitHub version control
+
+
+
+\## Tech Stack
+
+
+
+\- Python
+
+\- Pandas
+
+\- NumPy
+
+\- Scikit-learn
+
+\- Machine Learning
+
+\- MLflow
+
+\- FastAPI
+
+\- Docker
+
+\- Git
+
+\- GitHub
+
+\- Jupyter Notebook
+
+
+
 \## Project Architecture
-
-
-
-The project follows this workflow:
 
 
 
 Customer Churn Dataset
 
-&#x20;       ↓
+&#x20;       |
+
+&#x20;       v
 
 Data Ingestion
 
-&#x20;       ↓
+&#x20;       |
+
+&#x20;       v
 
 Data Transformation
 
-&#x20;       ↓
+&#x20;       |
+
+&#x20;       v
 
 Model Training
 
-&#x20;       ↓
+&#x20;       |
+
+&#x20;       v
 
 Model Evaluation
 
-&#x20;       ↓
+&#x20;       |
+
+&#x20;       v
 
 Trained Model
 
-&#x20;       ↓
+&#x20;       |
+
+&#x20;       v
 
 FastAPI
 
-&#x20;       ↓
+&#x20;       |
+
+&#x20;       v
 
 Docker Container
 
-&#x20;       ↓
+&#x20;       |
+
+&#x20;       v
 
 Prediction API
 
 
 
-
-
-Project Structure
+\## Project Structure
 
 
 
 customer-churn-mlops/
 
-│
+|
 
-├── data/
+|-- data/
 
-│   └── raw/
+|   |-- raw/
 
-│       └── Telco-Customer-Churn.csv
+|       |-- Telco-Customer-Churn.csv
 
-│
+|
 
-├── notebooks/
+|-- notebooks/
 
-│   └── customer\_churn.ipynb
+|   |-- customer\_churn.ipynb
 
-│
+|
 
-├── src/
+|-- src/
 
-│   └── mlproject/
+|   |-- mlproject/
 
-│       ├── components/
+|       |-- components/
 
-│       │   ├── data\_ingestion.py
+|       |   |-- data\_ingestion.py
 
-│       │   ├── data\_transformation.py
+|       |   |-- data\_transformation.py
 
-│       │   └── model\_trainer.py
+|       |   |-- model\_trainer.py
 
-│       │
+|       |
 
-│       ├── pipeline/
+|       |-- pipeline/
 
-│       │   ├── train\_pipeline.py
+|       |   |-- train\_pipeline.py
 
-│       │   └── predict\_pipeline.py
+|       |   |-- predict\_pipeline.py
 
-│       │
+|       |
 
-│       ├── exception.py
+|       |-- exception.py
 
-│       └── utils/
+|       |-- utils/
 
-│           └── utils.py
+|           |-- utils.py
 
-│
+|
 
-├── app.py
+|-- app.py
 
-├── dockerfile
+|-- dockerfile
 
-├── requirements.txt
+|-- requirements.txt
 
-├── .gitignore
+|-- .gitignore
 
-└── README.md
-
-
+|-- README.md
 
 
 
-Machine Learning Pipeline
+\## Machine Learning Pipeline
 
-1\. Data Ingestion
+
+
+\### 1. Data Ingestion
 
 
 
@@ -120,23 +194,29 @@ The raw customer churn dataset is loaded and split into training and testing dat
 
 
 
-2\. Data Transformation
+\### 2. Data Transformation
 
 
 
-The data is prepared for machine learning using preprocessing techniques such as:
+The data is prepared for machine learning using preprocessing techniques.
 
 
 
-Handling missing values
+This includes:
 
-Encoding categorical variables
 
-Feature transformation
 
-Numerical feature preprocessing
+\- Handling missing values
 
-3\. Model Training
+\- Encoding categorical variables
+
+\- Feature transformation
+
+\- Numerical feature preprocessing
+
+
+
+\### 3. Model Training
 
 
 
@@ -144,7 +224,7 @@ Machine Learning models are trained using the processed training data.
 
 
 
-4\. Model Evaluation
+\### 4. Model Evaluation
 
 
 
@@ -152,7 +232,7 @@ The trained models are evaluated using the test dataset and appropriate classifi
 
 
 
-5\. MLflow
+\### 5. MLflow
 
 
 
@@ -160,7 +240,7 @@ MLflow is used for experiment tracking and recording model-related information.
 
 
 
-6\. Prediction Pipeline
+\### 6. Prediction Pipeline
 
 
 
@@ -168,7 +248,7 @@ The prediction pipeline loads the trained preprocessing objects and model and ge
 
 
 
-FastAPI
+\## FastAPI
 
 
 
@@ -176,7 +256,9 @@ The trained model is exposed through a REST API using FastAPI.
 
 
 
-API Endpoint
+\### API Endpoint
+
+
 
 POST /predict
 
@@ -200,7 +282,9 @@ The API can be tested using the FastAPI Swagger UI:
 
 http://localhost:8000/docs
 
-Docker
+
+
+\## Docker
 
 
 
@@ -230,7 +314,9 @@ After starting the container, open:
 
 http://localhost:8000/docs
 
-Running the Project Locally
+
+
+\## Running the Project Locally
 
 
 
@@ -280,23 +366,29 @@ Open the API documentation:
 
 http://localhost:8000/docs
 
-Future Improvements
 
-Add CI/CD using GitHub Actions
 
-Deploy the API to a cloud platform
+\## Future Improvements
 
-Add automated model monitoring
 
-Add data validation
 
-Add unit tests
+\- Add CI/CD using GitHub Actions
 
-Add model versioning
+\- Deploy the API to a cloud platform
 
-Add automated Docker image builds
+\- Add automated model monitoring
 
-Author
+\- Add data validation
+
+\- Add unit tests
+
+\- Add model versioning
+
+\- Add automated Docker image builds
+
+
+
+\## Author
 
 
 
@@ -304,5 +396,7 @@ Satyam Mehra
 
 
 
-GitHub: https://github.com/mehrasatyam121-code
+GitHub:
+
+https://github.com/mehrasatyam121-code
 
