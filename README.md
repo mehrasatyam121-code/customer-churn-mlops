@@ -1,126 +1,50 @@
-\# Customer Churn Prediction — End-to-End ML Project
-
-
-
-\## Project Overview
-
-
-
-This project is an end-to-end Machine Learning application that predicts whether a customer is likely to churn.
-
-
-
-The project covers the complete ML lifecycle:
-
-
-
-\- Data ingestion
-
-\- Data preprocessing and transformation
-
-\- Model training
-
-\- Model evaluation
-
-\- MLflow experiment tracking
-
-\- Prediction pipeline
-
-\- FastAPI model serving
-
-\- Docker containerization
-
-\- Git and GitHub version control
-
-
-
-\## Tech Stack
-
-
-
-\- Python
-
-\- Pandas
-
-\- NumPy
-
-\- Scikit-learn
-
-\- Machine Learning
-
-\- MLflow
-
-\- FastAPI
-
-\- Docker
-
-\- Git
-
-\- GitHub
-
-\- Jupyter Notebook
-
-
-
 \## Project Architecture
 
 
 
-```text
+The project follows this workflow:
+
+
 
 Customer Churn Dataset
 
-&#x20;       |
-
-&#x20;       v
+&#x20;       ↓
 
 Data Ingestion
 
-&#x20;       |
-
-&#x20;       v
+&#x20;       ↓
 
 Data Transformation
 
-&#x20;       |
-
-&#x20;       v
+&#x20;       ↓
 
 Model Training
 
-&#x20;       |
-
-&#x20;       v
+&#x20;       ↓
 
 Model Evaluation
 
-&#x20;       |
-
-&#x20;       v
+&#x20;       ↓
 
 Trained Model
 
-&#x20;       |
-
-&#x20;       v
+&#x20;       ↓
 
 FastAPI
 
-&#x20;       |
-
-&#x20;       v
+&#x20;       ↓
 
 Docker Container
 
-&#x20;       |
-
-&#x20;       v
+&#x20;       ↓
 
 Prediction API
 
 
 
 
+
+Project Structure
 
 
 
@@ -181,10 +105,6 @@ customer-churn-mlops/
 ├── .gitignore
 
 └── README.md
-
-
-
-
 
 
 
