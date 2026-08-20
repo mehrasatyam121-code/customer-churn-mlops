@@ -368,24 +368,6 @@ http://localhost:8000/docs
 
 
 
-\## Future Improvements
-
-
-
-\- Add CI/CD using GitHub Actions
-
-\- Deploy the API to a cloud platform
-
-\- Add automated model monitoring
-
-\- Add data validation
-
-\- Add unit tests
-
-\- Add model versioning
-
-\- Add automated Docker image builds
-
 
 
 \## Author
